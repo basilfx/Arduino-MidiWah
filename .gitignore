@@ -1,0 +1,4 @@
+# Eagle related
+eagle/*.b#*
+eagle/*.s#*
+eagle/*.pro
