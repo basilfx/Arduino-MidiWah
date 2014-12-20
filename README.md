@@ -1,5 +1,5 @@
 # MidiWah v1.0
-Arduino based bridge between the wah-wah (e.g. Dunlop GCB-95) and its potentiometer. Digitizes the potentiometer and feeds it via a digital potentiometer back to the circuit.
+Arduino based bridge between a wah-wah (e.g. Dunlop GCB-95) and its potentiometer. Digitizes the potentiometer and feeds it via a digital potentiometer back to the circuit.
 
 As a bonus, the digitized potentiometer signal can be  outputted via MIDI OUT.
 
@@ -10,14 +10,39 @@ As a bonus, the digitized potentiometer signal can be  outputted via MIDI OUT.
 ## Eagle
 
 ### Bill of materials
-* Atmega168/328
-* MCP4251
-* 6N138
+An Atmega328 can also be used. The R7-R9 are 0-ohm jumpers. The MCP4251 has a range of 0-100k.
 
-To be done.
+| Part | Value     | Device          | Package           |
+|------|-----------|-----------------|-------------------|
+| C1   | 22pF      | C-EU025-024X044 | C025-024X044      |
+| C2   | 22pF      | C-EU025-024X044 | C025-024X044      |
+| C3   | 1µF       | CPOL-EUE2.5-5   | E2,5-5            |
+| C4   | 1µF       | CPOL-EUE2.5-5   | E2,5-5            |
+| C5   | 100nF     | C-EU025-024X044 | C025-024X044      |
+| C6   | 100nF     | C-EU025-024X044 | C025-024X044      |
+| C7   | 100nF     | C-EU025-024X044 | C025-024X044      |
+| C8   | 100nF     | C-EU025-024X044 | C025-024X044      |
+| D1   | 1N4148    | 1N4148          | DO35-7            |
+| IC1  | ATMEGA168 | MEGA8-P         | DIL28-3           |
+| IC2  | 7805L     | 7805L           | TO92              |
+| IC3  | MCP4251   | MCP4251-104     | DIP254P762X533-14 |
+| IC4  | 6N138     | 6N138           | DIL08             |
+| Q1   | 16MHz     | CRYSTALHC49S    | HC49/S            |
+| R1   | 10k       | R-EU_0204/7     | 0204/7            |
+| R2   | 220       | R-EU_0204/7     | 0204/7            |
+| R3   | 1k        | R-EU_0204/7     | 0204/7            |
+| R4   | 220       | R-EU_0204/7     | 0204/7            |
+| R5   | 1k        | R-EU_0204/7     | 0204/7            |
+| R6   | 1k        | R-EU_0204/2V    | 0204V             |
+| R7   | 0         | R-EU_M0805      | M0805             |
+| R8   | 0         | R-EU_M0805      | M0805             |
+| R9   | 0         | R-EU_M0805      | M0805             |
+| SW1  |           | SW_DIP-4        | EDG-04            |
 
 ### Board render
-To be done.
+The board measures 1.70x2.10 inch. Below a render of the top and bottom.
+
+![brd](https://raw.githubusercontent.com/basilfx/Arduino-MidiWah/master/docs/board.png)
 
 ## Arduino
 The source can be found under `firmware`. It's build with Arduino 1.0.5, but newer versions should work too.

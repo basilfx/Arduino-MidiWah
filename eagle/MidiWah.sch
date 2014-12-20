@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -15025,14 +15025,14 @@ high speed (Philips)</description>
 </class>
 </classes>
 <parts>
-<part name="Q1" library="crystal" deviceset="CRYSTAL" device="HC49S"/>
+<part name="Q1" library="crystal" deviceset="CRYSTAL" device="HC49S" value="16MHz"/>
 <part name="IC4" library="optocoupler" deviceset="6N138" device=""/>
 <part name="SW1" library="special" deviceset="SW_DIP-4" device=""/>
 <part name="IC1" library="atmel" deviceset="MEGA8-P" device="" value="ATMEGA168"/>
 <part name="IC2" library="linear" deviceset="78*" device="L" technology="05"/>
-<part name="R1" library="rcl" deviceset="R-EU_" device="0204/7"/>
-<part name="C1" library="rcl" deviceset="C-EU" device="025-024X044"/>
-<part name="C2" library="rcl" deviceset="C-EU" device="025-024X044"/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="0204/7" value="10k"/>
+<part name="C1" library="rcl" deviceset="C-EU" device="025-024X044" value="22pF"/>
+<part name="C2" library="rcl" deviceset="C-EU" device="025-024X044" value="22pF"/>
 <part name="U$2" library="SparkFun" deviceset="5V" device=""/>
 <part name="U$4" library="SparkFun" deviceset="5V" device=""/>
 <part name="U$5" library="SparkFun" deviceset="5V" device=""/>
@@ -15042,15 +15042,15 @@ high speed (Philips)</description>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="supply2" deviceset="VCC" device=""/>
-<part name="C3" library="rcl" deviceset="CPOL-EU" device="E2.5-5"/>
-<part name="C4" library="rcl" deviceset="CPOL-EU" device="E2.5-5"/>
-<part name="C5" library="rcl" deviceset="C-EU" device="025-024X044"/>
-<part name="C6" library="rcl" deviceset="C-EU" device="025-024X044"/>
+<part name="C3" library="rcl" deviceset="CPOL-EU" device="E2.5-5" value="1µF"/>
+<part name="C4" library="rcl" deviceset="CPOL-EU" device="E2.5-5" value="1µF"/>
+<part name="C5" library="rcl" deviceset="C-EU" device="025-024X044" value="100nF"/>
+<part name="C6" library="rcl" deviceset="C-EU" device="025-024X044" value="100nF"/>
 <part name="U$7" library="SparkFun" deviceset="5V" device=""/>
 <part name="IC3" library="Microchip_By_element14_Batch_1" deviceset="MCP4251-104E/P" device="" value="MCP4251"/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="0204/7"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="0204/7" value="220"/>
 <part name="D1" library="diode" deviceset="1N4148" device="DO35-7" value="1N4148"/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="0204/7"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="0204/7" value="1k"/>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
 <part name="POT" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="U$8" library="SparkFun" deviceset="5V" device=""/>
@@ -15061,15 +15061,15 @@ high speed (Philips)</description>
 <part name="SUPPLY8" library="supply2" deviceset="VCC" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
 <part name="OUT" library="pinhead" deviceset="PINHD-1X3" device=""/>
-<part name="R4" library="rcl" deviceset="R-EU_" device="0204/7"/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="0204/7" value="220"/>
 <part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
 <part name="U$9" library="SparkFun" deviceset="5V" device=""/>
 <part name="LED" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
-<part name="R5" library="rcl" deviceset="R-EU_" device="0204/7"/>
-<part name="R6" library="rcl" deviceset="R-EU_" device="0204/2V"/>
-<part name="C7" library="rcl" deviceset="C-EU" device="025-024X044"/>
-<part name="C8" library="rcl" deviceset="C-EU" device="025-024X044"/>
+<part name="R5" library="rcl" deviceset="R-EU_" device="0204/7" value="1k"/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="0204/2V" value="1k"/>
+<part name="C7" library="rcl" deviceset="C-EU" device="025-024X044" value="100nF"/>
+<part name="C8" library="rcl" deviceset="C-EU" device="025-024X044" value="100nF"/>
 <part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
 <part name="U$1" library="SparkFun" deviceset="5V" device=""/>
